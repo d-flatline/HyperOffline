@@ -14,7 +14,8 @@ as a SQLite database, with a terminal browser for reading it.
 
 ## Use
 
-    tar -xf HyperOffline.tar.xz && cd HyperOffline
+    tar --zstd -xf HyperOffline.tar.zst && cd HyperOffline
+    # (or: zstd -d HyperOffline.tar.zst && tar -xf HyperOffline.tar)
     pip install textual
     python3 hyperlab_tui.py            # or --db <path>
 
